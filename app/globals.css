@@ -1,0 +1,91 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.btn2 {
+    @apply text-white bg-primary border-2 border-transparent hover:border-primary hover:bg-[#1A237E] duration-300 transition-all ease-linear  font-medium rounded-full lg:text-base font-Jost uppercase text-[12px] px-6 py-3 text-center overflow-hidden;
+    position: relative; /* Add position relative for absolute positioning of ::before pseudo-element */
+  }
+  
+  .btn2::before {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 100%;
+    background-image: linear-gradient(
+      120deg,
+      rgba(23, 188, 230, 0) 30%,
+      rgba(255, 255, 255, 0.8),
+      rgba(255, 255, 255, 0) 70%
+    );
+    top: 0;
+    left: -100px;
+    opacity: 0.6;
+    animation: shine 1.5s ease-out infinite; /* Apply animation by default */
+  }
+  
+  @keyframes shine {
+    0% {
+      left: -100px;
+    }
+  
+    60% {
+      left: 100%;
+    }
+  
+    to {
+      left: 100%;
+    }
+  }
+  .btn3 {
+    @apply text-white bg-[#1A237E] hover:bg-primary duration-300 transition-all ease-linear font-medium rounded-full lg:text-base font-Jost uppercase text-[10px] px-6 py-3 text-center overflow-hidden;
+    position: relative; /* Add position relative for absolute positioning of ::before pseudo-element */
+  }
+  
+  .btn3::before {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 100%;
+    background-image: linear-gradient(
+      120deg,
+      rgba(23, 188, 230, 0) 30%,
+      rgba(255, 255, 255, 0.8),
+      rgba(255, 255, 255, 0) 70%
+    );
+    top: 0;
+    left: -100px;
+    opacity: 0.6;
+    animation: shine1 1.5s ease-out infinite; /* Apply animation by default */
+  }
+  
+  @keyframes shine1 {
+    0% {
+      left: -100px;
+    }
+  
+    60% {
+      left: 100%;
+    }
+  
+    to {
+      left: 100%;
+    }
+  }
+
+  
+  
+   @keyframes slowBounce {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-5%);
+    }
+  }
+  
+  .slow-bounce {
+    animation: slowBounce 3s infinite;
+  }
+  
