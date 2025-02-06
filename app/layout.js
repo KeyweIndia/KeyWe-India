@@ -1,17 +1,17 @@
 "use client";
 import { Inter } from "next/font/google";
-import React, { useCallback } from "react";
+import React, { useCallback, useEffect } from "react";
 import Particles from "react-particles";
 import { loadSlim } from "tsparticles-slim";
+import Script from "next/script"; // Import next/script
 import "./globals.css";
 import MainHeader from "@/components/common/MainHeader";
 import MainFooter from "@/components/common/MainFooter";
 import { metadata } from "../app/metadata";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+
 const inter = Inter({ subsets: ["latin"] });
-
-
 
 export default function RootLayout({ children }) {
   const particlesInit = useCallback(async (engine) => {
@@ -26,10 +26,14 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-      <link href="/favicon.ico" rel="icon" type="image/x-icon" />
-      <meta name="keywords" content={metadata.keywords} />
-      <title>{metadata.title}</title>
+        <link href="/favicon.ico" rel="icon" type="image/x-icon" />
+        <meta name="keywords" content={metadata.keywords} />
+        <title>{metadata.title}</title>
         <meta name="description" content={metadata.description} />
+        <link
+          rel="stylesheet"
+          href="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/themes/df-messenger-default.css"
+        />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
         <link
@@ -38,6 +42,12 @@ export default function RootLayout({ children }) {
         />
       </head>
       <body className={inter.className}>
+        {/* Load the Dialogflow script using next/script */}
+        <Script
+          src="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/df-messenger.js"
+          strategy="lazyOnload"
+        />
+
         <div className="relative h-full">
           <Particles
             id="tsparticles"
@@ -60,7 +70,7 @@ export default function RootLayout({ children }) {
                     enable: true,
                     mode: "repulse",
                   },
-                  resize: true,
+                  resize: false,
                 },
                 modes: {
                   push: {
@@ -122,24 +132,33 @@ export default function RootLayout({ children }) {
             }}
           />
           <div className="relative z-2">
-            {/* <TopHeader /> */}
             <MainHeader />
             {children}
             <MainFooter />
             <ToastContainer
-          position="bottom-center"
-          autoClose={5000}
-          hideProgressBar={false}
-          newestOnTop={false}
-          closeOnClick
-          rtl={false}
-          pauseOnFocusLoss
-          draggable
-          pauseOnHover
-          theme="light"
-        />
+              position="bottom-center"
+              autoClose={5000}
+              hideProgressBar={false}
+              newestOnTop={false}
+              closeOnClick
+              rtl={false}
+              pauseOnFocusLoss
+              draggable
+              pauseOnHover
+              theme="light"
+            />
           </div>
         </div>
+
+        {/* Dialogflow Messenger should be inside the body */}
+        <df-messenger
+          project-id="evocative-tube-441505-h6"
+          agent-id="fc56069b-e1f8-41cc-8355-f0727cb40b48"
+          language-code="en"
+          max-query-length="-1"
+        >
+          <df-messenger-chat-bubble chat-title="genBot"></df-messenger-chat-bubble>
+        </df-messenger>
       </body>
     </html>
   );

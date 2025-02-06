@@ -34,6 +34,15 @@ const bloglist = [
         publish: '6',
 
     },
+    // {
+    //     id: 4,
+    //     title: `Transform Your Workplace with ConnectHub: A Microsoft SharePoint Intranet for Maximum Productivity`,
+    //     description: `Microsoft is showcasing new ways to use #Copilot in #PowerAutomate to automate and coordinate business activities throughout your company at #MicrosoftIgnite 2023. Microsoft revealed earlier this year how users may use Copilot to help with data ingestion for process mining as well as to design and improve cloud processes. They thrilled to present the newest development of Copilot in Power Automate, which includes additional enhancements for cloud flows and desktop flows as well as #automation activity analysis.`,
+    //     img: Blog3,
+    //     url: `/blogs/transform-your-workplace-with-connecthub-a-microsoft-sharepoint-intranet-for-maximum-productivity`,
+    //     publish: '6',
+
+    // },
     
 ]
 
