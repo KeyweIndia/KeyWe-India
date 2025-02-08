@@ -32,7 +32,7 @@ export default function RootLayout({ children }) {
         <meta name="description" content={metadata.description} />
         <link
           rel="stylesheet"
-          href="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/themes/df-messenger-default.css"
+href="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/themes/df-messenger-default.css"
         />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
@@ -44,8 +44,7 @@ export default function RootLayout({ children }) {
       <body className={inter.className}>
         {/* Load the Dialogflow script using next/script */}
         <Script
-          src="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/df-messenger.js"
-          strategy="lazyOnload"
+        src="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/df-messenger.js"
         />
 
         <div className="relative h-full">
@@ -152,12 +151,12 @@ export default function RootLayout({ children }) {
 
         {/* Dialogflow Messenger should be inside the body */}
         <df-messenger
-          project-id="evocative-tube-441505-h6"
-          agent-id="fc56069b-e1f8-41cc-8355-f0727cb40b48"
-          language-code="en"
-          max-query-length="-1"
+         project-id="nonubot-450219"
+         agent-id="87048c40-1da9-464b-98b0-c651c4c067c8"
+         language-code="en"
+         max-query-length="-1"
         >
-          <df-messenger-chat-bubble chat-title="genBot"></df-messenger-chat-bubble>
+          <df-messenger-chat-bubble chat-title="nonutxt231"></df-messenger-chat-bubble>
         </df-messenger>
       </body>
     </html>
