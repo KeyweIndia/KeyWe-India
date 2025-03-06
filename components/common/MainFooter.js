@@ -1,5 +1,6 @@
 import React from 'react'
 import Logo from  '../../public/logo1.png'
+import MicrosoftImg from '../../public/microsoft.png'
 
 import Image from 'next/image'
 import Link from 'next/link'
@@ -8,7 +9,7 @@ import { IoCall } from "react-icons/io5";
 import { IoMdMail } from "react-icons/io";
 import { FaXTwitter } from "react-icons/fa6";
 
-import { FaFacebookF,FaInstagram ,FaLinkedinIn ,FaYoutube  } from "react-icons/fa";
+// import { FaFacebookF,FaInstagram ,FaLinkedinIn ,FaYoutube  } from "react-icons/fa";
 
 const MainFooter = () => {
   return (
@@ -20,13 +21,14 @@ const MainFooter = () => {
 <Image src={Logo} alt='' className='w-full h-[100px] object-contain'/>
 </div>
 <p className='font-Jost text-gray-300 text-[15px]'>Our team can assist you in transforming<br/> your business through latest tech capabilities<br/> to stay ahead of the curve.</p>
-<ul className='flex justify-center items-center gap-3'>
-       <Link href={'https://www.facebook.com/profile.php?id=100078043957514'} target='_blank' className='bg-black/55 p-2 rounded-full'> <FaFacebookF className='hover:text-primary ease-in-out duration-200'/></Link>
+{/* <ul className='flex justify-center items-center gap-3'> */}
+       {/* <Link href={'https://www.facebook.com/profile.php?id=100078043957514'} target='_blank' className='bg-black/55 p-2 rounded-full'> <FaFacebookF className='hover:text-primary ease-in-out duration-200'/></Link> */}
         {/* <Link href={'/'} className='bg-black/55  p-2 rounded-full'><FaXTwitter className='hover:text-primary ease-in-out duration-200'/></Link> */}
-        <Link href={'https://www.instagram.com/keyweindia'} target='_blank' className='bg-black/55 p-2  rounded-full'><FaInstagram className='hover:text-primary ease-in-out duration-200'/></Link>
-      <Link href={'https://www.linkedin.com/company/keyweindia'} target='_blank' className='bg-black/55  p-2 rounded-full'>  <FaLinkedinIn className='hover:text-primary ease-in-out duration-200'/></Link>
+        {/* <Link href={'https://www.instagram.com/keyweindia'} target='_blank' className='bg-black/55 p-2  rounded-full'><FaInstagram className='hover:text-primary ease-in-out duration-200'/></Link> */}
+      {/* <Link href={'https://www.linkedin.com/company/keyweindia'} target='_blank' className='bg-black/55  p-2 rounded-full'>  <FaLinkedinIn className='hover:text-primary ease-in-out duration-200'/></Link> */}
       {/* <Link href={'/'} className='bg-black/55  p-2 rounded-full'>  <FaYoutube className='hover:text-primary ease-in-out duration-200'/></Link> */}
-        </ul>
+        {/* </ul> */}
+        <Image src={MicrosoftImg} alt='Microsoft' width={200} height={200}/>
 </div>
 <div className='flex flex-col justify-center items-start gap-5'>
   <h4 className='font-Jost text-[20px] font-semibold'>Useful Links</h4>

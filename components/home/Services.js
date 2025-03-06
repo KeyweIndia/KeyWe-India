@@ -12,7 +12,7 @@ const Services = () => {
         <div className='flex flex-col justify-center items-center '>
             <h5 className='text-[18px] font-Open text-primary font-semibold'>OUR SERVICES</h5>
             <h2 className='lg:text-[40px] text-[22px] text-white text-center font-Open font-bold'>Our Best-in-class Services</h2>
-            <p className='text-[18px] font-Jost text-gray-100'>{`At KeyWe India, Your Success is Our Priority`}</p>
+            <p className='text-[18px] font-Jost text-center text-gray-100'>{`At KeyWe India, Your Success is Our Priority`}</p>
         </div>
         <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-2 pt-10'>
             <div className='bg-transparent/10  border-2 border-primary duration-200 transition-all ease-linear shadow-lg p-5   rounded-[10px] flex flex-col justify-start items-center gap-5'>
