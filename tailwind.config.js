@@ -19,8 +19,9 @@ module.exports = {
         },  
       },
       colors: {
-        primary: "#00E5FF",
-        secondary: "#8fd59c",
+       // primary: "#00E5FF",
+        primary: "#7a147a",
+        secondary: "#2203a5",
         // heading: "#01173c",
         // body: "#efe7da",
       },

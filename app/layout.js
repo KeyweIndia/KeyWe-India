@@ -49,10 +49,10 @@ export default function RootLayout({ children }) {
             options={{
               background: {
                 color: {
-                  value: "#1A237E",
+                  value: "#ffffff",
                 },
               },
-              fpsLimit: 120,
+              fpsLimit: 50,
               interactivity: {
                 events: {
                   onClick: {
@@ -77,13 +77,13 @@ export default function RootLayout({ children }) {
               },
               particles: {
                 color: {
-                  value: "#ffffff",
+                  value: "#1f03a7",
                 },
                 links: {
-                  color: "#ffffff",
+                  color: "#1f03a7",
                   distance: 150,
                   enable: true,
-                  opacity: 0.5,
+                  opacity: 0.1,
                   width: 1,
                 },
                 move: {
@@ -104,7 +104,7 @@ export default function RootLayout({ children }) {
                   value: 80,
                 },
                 opacity: {
-                  value: 0.5,
+                  value: 0.1,
                 },
                 shape: {
                   type: "circle",

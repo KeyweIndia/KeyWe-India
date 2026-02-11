@@ -118,7 +118,7 @@ time spent on administrative and non-productive tasks toward more strategic, imp
                             <h2 className="text-[22px] capitalize  text-white pt-4 font-bold">{`Ready to Boost Your Team’s Productivity?`}</h2>
                             <p className='text-gray-200 md:text-[17px] text-[14px]  tracking-wide font-Jost leading-normal pt-4'>{`Book a demo now and see how our intranet can help you build a more efficient and successful workplace.`}</p>
                            <div className=' mt-10'>
-                           <Link href={'/contact'} class="bg-transparent border-2 border-primary hover:bg-primary rounded-full px-7 py-3">Book A Demo</Link>
+                           <Link href={'/contact'} className="bg-transparent border-2 border-primary hover:bg-primary rounded-full px-7 py-3">Book A Demo</Link>
                            </div>
                         </div>
 

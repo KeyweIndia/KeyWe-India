@@ -74,12 +74,12 @@ const CounterItem = ({ countOn, start, end, label }) => {
     <div className="text-center ">
      <div className=''>
    <div className="flex flex-col">
-   <div style={{ boxShadow: 'rgba(100, 100, 111, 0.2) 0px 7px 29px 0px' }} className="bg-transparent/10 border-2 rounded-[10px] border-primary p-5 ">
-    <div className='text-white font-bold lg:text-4xl tracking-wide text-4xl'>
+   <div style={{ boxShadow: 'rgba(100, 100, 111, 0.2) 0px 7px 29px 0px' }} className="bg-[#ffffff]  rounded-[10px] p-5 ">
+    <div className='text-primary font-bold lg:text-4xl tracking-wide text-4xl'>
         {countOn && <CountUp start={start} end={end} duration={2} delay={0} />}{' '}
         +
       </div>
-      <div className='text-gray-300 text-lg font-medium tracking-wide mt-5'>
+      <div className='text-gray-700 text-lg font-medium tracking-wide mt-5'>
         {label}
       </div>
     </div>

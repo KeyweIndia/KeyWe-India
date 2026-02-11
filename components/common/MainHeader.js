@@ -1,7 +1,7 @@
 "use client"
 import Image from 'next/image'
 import React, { useState } from 'react'
-import Logo from '../../public/logo1.png'
+import Logo from '../../public/logo3.png'
 import Link from 'next/link'
 import { GiHamburgerMenu } from 'react-icons/gi';
 import MobileNav from './MobileNav'
@@ -24,7 +24,7 @@ const MainHeader = () => {
   };
 
   return (
-    <div className='shadow-xl fixed border-b border-white top-0 w-full z-50 bg-[#1A237E] text-white'>
+    <div className='shadow-xl fixed border-b border-white top-0 w-full z-50 bg-[#ffffff] text-primary'>
       <div className='container mx-auto'>
         <div className='flex justify-between items-center py-1 '>
           <Link href={'/'}>
@@ -53,7 +53,7 @@ const MainHeader = () => {
             </li>
           </ul>
           <div className='flex justify-center items-center gap-2'>
-            <Link href={'/contact'} class="btn2">Get in touch</Link>
+            <Link href={'/contact'} className="btn2">Get in touch</Link>
             <div className='lg:hidden flex flex-[1 0 0] border  bg-[rgba(255, 255, 255, 0.80)] rounded-lg  shadow-md  p-[8px]' onClick={toggleMobileNav}>
               <GiHamburgerMenu className='text-[28px] cursor-pointer' />
             </div>

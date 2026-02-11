@@ -14,11 +14,11 @@ const About = () => {
     </div>
 </div>
 <div className='w-full lg:w-[50%] flex flex-col lg:justify-start lg:items-start justify-center items-center gap-3'>
-<div className='bg-primary text-white px-7 py-1 shadow-md rounded-full flex justify-center items-center'>
+<div className='bg-gradient-to-r from-[#b01d5f] to-secondary text-white px-7 py-1 shadow-md rounded-full flex justify-center items-center'>
     <p className='text-[18px] font-Open font-medium'>Who we are</p>
 </div>
-<h3 className='lg:text-[40px] text-[20px] text-center lg:text-start capitalize leading-[45px] text-white  font-bold'>{`We promise rewarding results through solutions.`} </h3>
-<p className="font-Jost text-[18px] text-justify text-gray-300" >{`At KeyWe India Pvt. Ltd. we ensure solutions that yield satisfying outcomes, customized to meet your unique requirements effectively and efficiently.`}</p>
+<h3 className='lg:text-[40px] text-[20px] text-center lg:text-start capitalize leading-[45px] text-[#000000]  font-bold'>{`We promise rewarding results through solutions.`} </h3>
+<p className="font-Jost text-[18px] text-justify text-gray-700" >{`At KeyWe India Pvt. Ltd. we ensure solutions that yield satisfying outcomes, customized to meet your unique requirements effectively and efficiently.`}</p>
 <CounterUp/>
 </div>
 </div>

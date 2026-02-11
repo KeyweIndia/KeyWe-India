@@ -86,7 +86,7 @@ const Testonomials = () => {
           className={`flex flex-col justify-center items-center space-y-2  pb-16 `}
         >
           <p className="text-[18px] font-Open font-medium text-primary uppercase"> OUR testimonial</p>
-          <h3 className="text-white text-center lg:text-[40px] text-[22px] font-[700]">
+          <h3 className="text-[#000000] text-center lg:text-[40px] text-[22px] font-[700]">
           Experience the Delight of Satisfied Clients with Our Remarkable Work
           </h3>
         </div>
@@ -100,10 +100,10 @@ const Testonomials = () => {
                   key={index}
                   className=" flex  justify-center  items-center    cursor-pointer gap-6   "
                 >
-                 <div className="lg:h-[430px] h-full mr-3 flex flex-col justify-start items-start bg-transparent/10  border-2 border-primary  p-[25px] shadow-md shadow-transparent overflow-hidden rounded-md">
+                 <div className="lg:h-[430px] h-full mr-3 flex flex-col justify-start items-start bg-[#ffffff]  border-2 border-primary  p-[25px] shadow-md shadow-transparent overflow-hidden rounded-md">
                  <div className="flex flex-col justify-start items-start gap-3">
                     <FaQuoteLeft className="text-[30px]  text-yellow-400" />
-                    <span className="lg:text-[14px] text-gray-300 text-[14px] font-Jost text-justify  tracking-wide  leading-relaxed">
+                    <span className="lg:text-[14px] text-gray-700 text-[14px] font-Jost text-justify  tracking-wide  leading-relaxed">
                       {item.description}
                     </span>
                   </div>
@@ -112,7 +112,7 @@ const Testonomials = () => {
                       <Image src={item.img} alt="client" className="w-[60px] h-[60px] object-cover rounded-full border-2 "/>
                     </div>
                   <div className="flex flex-col justify-start items-start">
-                  <span className=" text-[22px] font-medium text-white  ">
+                  <span className=" text-[22px] font-medium text-[#000000]  ">
                     {item.title}
                   </span>
                   <div className="flex justify-center items-center gap-1">

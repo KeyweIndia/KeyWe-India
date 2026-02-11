@@ -1,5 +1,5 @@
 import React from 'react'
-import AboutImage from '../../public/Team-cuate.svg'
+import AboutImage from '../../public/Team-cuate.png'
 import T1 from '../../public/target.png'
 import T2 from '../../public/vision.png'
 import T3 from '../../public/value-proposition.png'
@@ -24,8 +24,8 @@ const AboutSection = () => {
     <p className='text-[18px] font-Open font-semibold text-primary  uppercase'>About Us</p>
     <p className='w-[35px] h-[3px] bg-primary'></p>
 </div>
-<h3 className="lg:text-[40px] text-[22px] capitalize text-center text-white pt-4 font-bold">{`Welcome To KeyWe `} </h3>
-<p className="font-Jost text-[18px] text-justify pt-3 text-gray-100" >{`KeyWe is a boutique IT service consulting for app solutions, software Development Company, aiming to maximize customers’ business productivity and transform their digital transformation across the globe. We are registered in MCA and our services are driven by a specialized and enthusiastic team that blends industry standards with technological expertise and domain understanding to enable a better experience for customers.`}</p>
+<h3 className="lg:text-[40px] text-[22px] capitalize text-center text-[#000000] pt-4 font-bold">{`Welcome To KeyWe `} </h3>
+<p className="font-Jost text-[18px] text-justify pt-3 text-gray-700" >{`KeyWe is a boutique IT service consulting for app solutions, software Development Company, aiming to maximize customers’ business productivity and transform their digital transformation across the globe. We are registered in MCA and our services are driven by a specialized and enthusiastic team that blends industry standards with technological expertise and domain understanding to enable a better experience for customers.`}</p>
 <div className='my-7'>
 <Link href={'/contact'} className='btn2'>Get Started Now</Link>
 
@@ -34,21 +34,21 @@ const AboutSection = () => {
 </div>
 <div className='grid  grid-cols-1 lg:grid-cols-3 gap-10 pt-20'>
   <div className='bg-white flex-[1 0 0] border shadow-md rounded-md p-5 flex flex-col justify-center items-center gap-5'>
-  <div className='bg-primary/60 p-4 rounded-full flex justify-center items-center'>
+  <div className='bg-primary p-4 rounded-full flex justify-center items-center'>
         <Image src={T1} alt='' className='w-full h-full object-cover'/>
     </div>
     <h3 className='text-[20px] font-Open font-bold text-black '>{`Our mission`}</h3>
     <p className='text-[18px] font-Jost text-center  text-black '>{`At KeyWe, we are a team of diverse and talented professionals. Our mix of skills and experiences helps us deliver fast and creative solutions for your business. We work closely with you to develop strategies that achieve real results, supporting you every step of the way.`}</p>
   </div>
   <div className='bg-white flex-[1 0 0] border shadow-md rounded-md p-5 flex flex-col justify-center items-center gap-5'>
-    <div className='bg-primary/60 p-4 rounded-full flex justify-center items-center'>
+    <div className='bg-primary p-4 rounded-full flex justify-center items-center'>
         <Image src={T2} alt='' className='w-full h-full object-cover'/>
     </div>
     <h3 className='text-[20px] font-Open font-bold text-black '>{`Our vision`}</h3>
     <p className='text-[18px] font-Jost text-center  text-black '>{`At KeyWe, we see a future where our diverse team provides quick and creative solutions for businesses. We aim to help you create strategies that get real results. By working closely with you, we ensure your business grows and succeeds.`}</p>
   </div>
   <div className='bg-white flex-[1 0 0] border shadow-md rounded-md p-5 flex flex-col justify-center items-center gap-5'>
-  <div className='bg-primary/60 p-4 rounded-full flex justify-center items-center'>
+  <div className='bg-primary p-4 rounded-full flex justify-center items-center'>
         <Image src={T3} alt='' className='w-full h-full object-cover'/>
     </div>
     <h3 className='text-[20px] font-Open font-bold text-black '>{`Our value`}</h3>

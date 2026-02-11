@@ -1,5 +1,5 @@
 import React from 'react'
-import W1 from '../../public/Questions-amico.svg'
+import W1 from '../../public/Questions-amico.png'
 import Image from 'next/image'
 import Link from 'next/link'
 const Why = () => {
@@ -13,8 +13,8 @@ const Why = () => {
     <p className='text-[18px] font-Open font-semibold text-primary  uppercase'>why choose Us</p>
     <p className='w-[35px] h-[3px] bg-primary'></p>
 </div>
-<h3 className="lg:text-[40px] text-[22px] capitalize text-center text-white pt-4 font-bold">{`Why KeyWe `} </h3>
-<p className="font-Jost text-[18px] text-justify pt-3 text-gray-100" >{`KeyWe, your trusted IT solution provider, offers personalized services to meet your specific needs. Our team of experts understands the intricacies of your business and delivers tailor-made solutions that align perfectly with your goals. With our comprehensive approach to technology, we ensure smooth operations and empower your business to thrive in the ever-evolving digital landscape. Choose KeyWe for innovative solutions that propel your success story forward.`}</p>
+<h3 className="lg:text-[40px] text-[22px] capitalize text-center text-[#000000] pt-4 font-bold">{`Why KeyWe `} </h3>
+<p className="font-Jost text-[18px] text-justify pt-3 text-gray-700" >{`KeyWe, your trusted IT solution provider, offers personalized services to meet your specific needs. Our team of experts understands the intricacies of your business and delivers tailor-made solutions that align perfectly with your goals. With our comprehensive approach to technology, we ensure smooth operations and empower your business to thrive in the ever-evolving digital landscape. Choose KeyWe for innovative solutions that propel your success story forward.`}</p>
 <div className='my-7'>
 <Link href={'/contact'} className='btn2'>Get Started Now</Link>
 

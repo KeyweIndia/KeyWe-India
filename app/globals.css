@@ -4,7 +4,7 @@
 
 
 .btn2 {
-    @apply text-white bg-primary border-2 border-transparent hover:border-primary hover:bg-[#1A237E] duration-300 transition-all ease-linear  font-medium rounded-full lg:text-base font-Jost uppercase text-[12px] px-6 py-3 text-center overflow-hidden;
+    @apply text-white bg-gradient-to-r from-[#b01d5f] to-secondary hover:bg-gradient-to-r hover:from-secondary hover:to-[#b01d5f]   duration-300 transition-all ease-linear shadow-lg  font-medium rounded-full lg:text-base font-Jost uppercase text-[12px] px-6 py-3 text-center overflow-hidden;
     position: relative; /* Add position relative for absolute positioning of ::before pseudo-element */
   }
   

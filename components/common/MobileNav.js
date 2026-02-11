@@ -20,7 +20,7 @@ const MobileNav = ({ onLinkClick }) => {
 
  
   return (
-    <div className=" bg-[#1A237E] z-50 top-0  border-b-2 border-b-primary text-white  py-7 fixed w-full  lg:py-0 shadow">
+    <div className=" bg-primary z-50 top-0  border-b-2 border-b-primary text-white  py-7 fixed w-full  lg:py-0 shadow">
       <div className="container mx-auto">
         <ul className="lg:hidden relative flex flex-col justify-center items-start gap-5 ">
           <Link

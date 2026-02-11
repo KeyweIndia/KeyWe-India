@@ -52,7 +52,7 @@ const Blogs = () => {
       <div className="container mx-auto" >
       <div className='flex flex-col justify-center items-center '>
             <h5 className='text-[18px] uppercase font-Open text-primary font-semibold'>OUR Blogs</h5>
-            <h2 className='lg:text-[40px] text-[22px] capitalize text-white text-center font-Open font-bold'>Check Out Our Latest Blogs & News</h2>
+            <h2 className='lg:text-[40px] text-[22px] capitalize text-[#000000] text-center font-Open font-bold'>Check Out Our Latest Blogs & News</h2>
 <div className='grid grid-cols-1 md:grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 gap-5 py-10'>
 {
    bloglist.map((item, index)=>{
