@@ -28,7 +28,7 @@ const MainHeader = () => {
       <div className='container mx-auto'>
         <div className='flex justify-between items-center py-1 '>
           <Link href={'/'}>
-            <Image src={Logo} alt='logo' className='w-full h-[75px] py-[2px] object-contain'/>
+            <Image src={Logo} alt='logo' className='w-full h-[50px] py-[2px] object-contain'/>
           </Link>
           <ul className='hidden lg:flex justify-center items-center gap-7'>
             <li>
