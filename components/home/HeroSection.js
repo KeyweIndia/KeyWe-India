@@ -19,7 +19,7 @@ const HeroSection = () => {
           </div>
 <div className='w-full lg:w-[50%]'>
   <div>
-    <Image src={Hero1} alt='hero' className=' w-full h-full lg:h-[500px] slow-bounce   '/>
+    <Image src={Hero1} alt='hero' className=' w-full h-full lg:h-[500px]   '/>
   </div>
 </div>
          </div>

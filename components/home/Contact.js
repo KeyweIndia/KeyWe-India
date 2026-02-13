@@ -90,7 +90,10 @@ const Contact = () => {
           <div className='lg:w-[50%] w-full flex flex-col justify-start items-center gap-5 '>
          <h4 className='text-[#000000] md:text-[20px] text-[16px]'>Scan the QR and fill the form</h4>
          <div className=''>
-            <Image src={Scanner} alt='' className='w-[200px] h-[200px] object-cover' />
+          <Link href="https://forms.office.com/r/Epr0aWsaeQ">
+           <Image src={Scanner} alt='' className='w-[200px] h-[200px] object-cover' />
+           </Link>
+           
           </div>
           </div>
         </div>

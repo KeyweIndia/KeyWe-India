@@ -24,7 +24,7 @@ const MainHeader = () => {
   };
 
   return (
-    <div className='shadow-xl fixed border-b border-white top-0 w-full z-50 bg-[#ffffff] text-primary'>
+    <div className='shadow-xl fixed border-b border-white top-0 w-full z-50 bg-[#ffffff] text-[#000000]'>
       <div className='container mx-auto'>
         <div className='flex justify-between items-center py-1 '>
           <Link href={'/'}>
@@ -44,6 +44,11 @@ const MainHeader = () => {
             <li>
               <Link href={'/services'} passHref  className={`font-Open text-[18px] font-medium hover:text-primary duration-200 capitalize ${activeLink === '/services' ? 'text-primary' : ''}`} onClick={() => handleLinkClick('/services')}>
               Services
+              </Link>
+            </li>
+            <li>
+              <Link href={'https://forms.office.com/r/ehBVZ9AiHN?origin=lprLink'} target='_blank'   className={`font-Open text-[18px] font-medium hover:text-primary duration-200 capitalize `} >
+              Careers
               </Link>
             </li>
             <li>

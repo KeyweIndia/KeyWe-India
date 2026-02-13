@@ -37,6 +37,7 @@ const MainFooter = () => {
     <li><Link href={'/'} className='font-Jost text-[15px] text-gray-700 hover:text-primary ease-in-out duration-200'>Home</Link></li>
     <li><Link href={'/about'} className='font-Jost text-[15px] text-gray-700 hover:text-primary ease-in-out duration-200'>About us</Link></li>
     <li><Link href={'/services'} className='font-Jost text-[15px] text-gray-700 hover:text-primary ease-in-out duration-200'>Services</Link></li>
+    <li><Link href={'https://forms.office.com/r/ehBVZ9AiHN?origin=lprLink'} className='font-Jost text-[15px] text-gray-700 hover:text-primary ease-in-out duration-200'>Careers</Link></li>
     <li><Link href={'/contact'} className='font-Jost text-[15px] text-gray-700 hover:text-primary ease-in-out duration-200'>Contact us</Link></li>
   </ul>
 </div>

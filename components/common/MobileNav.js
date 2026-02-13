@@ -45,6 +45,13 @@ const MobileNav = ({ onLinkClick }) => {
           >
        Services
           </Link>
+             <Link
+        href={'https://forms.office.com/r/ehBVZ9AiHN?origin=lprLink'}
+            onClick={handleLinkClick}
+            className="text-[17px] font-medium"
+          >
+       Careers
+          </Link>
           <Link
          href={'/blogs'}
             onClick={handleLinkClick}
